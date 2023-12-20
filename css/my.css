@@ -1,0 +1,116 @@
+body {
+    background-color: #F7ECDE;
+}
+
+::selection {
+    background: #fec160;
+  }
+.header {
+    font-family: 'Pacifico', cursive;
+    width: fit-content;
+    z-index: 5;
+
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    background-color: #fec160;
+    bottom: 0%;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    transition-property: height;
+    transition-duration: 1s;
+}
+
+.header:hover:before {
+    height: 75%;
+}
+
+.line {
+    margin: 5px 0;
+    height: 2px;
+    background:
+        repeating-linear-gradient(90deg, rgb(0, 0, 0) 0 2px, #0000 0 5px)
+}
+
+
+
+
+.colored-box{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.colored-box i{
+    color: transparent;
+}
+.btn-submit{
+    color: white;
+    background-color:#e05028 ;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+.btn-submit:hover {
+    color: white;
+
+    background-color:#b73f1e ;
+}
+
+.normal-color:focus{
+  color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;  
+}
+
+
+.btn-visit{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+
+}
+.btn-delete{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+
+}
+
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.rounded-circle1{
+    background-color: #f15f5d;
+}
+.rounded-circle2{
+    background-color: #febe2e;
+    margin-right: 0.5rem!important;
+}
+.rounded-circle3{
+    background-color: #4db748;
+}
+.box-conent{
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #352e28;
+}
+.box-info {
+    background-color: #0007;
+}   
